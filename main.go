@@ -11,6 +11,7 @@ import (
 
 func main() {
 	database.DatabaseConnection()
+
 	database.DB.AutoMigrate(models.Task{})
 	database.DB.AutoMigrate(models.User{})
 
